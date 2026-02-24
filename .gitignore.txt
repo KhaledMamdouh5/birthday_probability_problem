@@ -1,0 +1,16 @@
+# MATLAB autosave
+*.asv
+
+# Simulink cache
+*.slxc
+
+# Temporary files
+*.mex*
+*.log
+
+# Data files
+*.mat
+
+# OS files
+.DS_Store
+Thumbs.db
