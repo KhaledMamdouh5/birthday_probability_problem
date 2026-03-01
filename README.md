@@ -13,17 +13,6 @@ This Python script calculates the probability directly using a recursive approac
 
 ### 2. Complementary "Not" Method (`Birthday_Problem_Not_Method.m`)
 This MATLAB script uses the "Complementary Probability" approach, which is mathematically more efficient. 
-* **Logic**: It calculates the probability that **no one** shares a birthday ($P(\text{None})$) and subtracts it from 1.
-  $$P(\text{At least 2}) = 1 - \frac{365!}{(365-n)! \cdot 365^n}$$
+* **Logic**: It calculates the probability that **no one** shares a birthday $P(\text{None})$ and subtracts it from 1:\
+    $$P(\text{At least 2}) = 1 - \frac{365!}{(365-n)! \cdot 365^n}$$
 * **Goal**: This script runs a `while` loop to find the minimum number of people $n$ required for the probability of shared birthdays to reach a specific threshold.
-
----
-
-## 🛠️ Implementation Details
-
-### Python Script (Forward Method)
-The Python version uses a recursive function `at_least_two_in_the_room(n)` to build the probability step-by-step.
-```python
-# Example Usage:
-# Enter the number of people in the room: 23
-# Output: The probability that at least 2 out of 23 share the same birthday is 50.73%
